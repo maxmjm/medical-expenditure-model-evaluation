@@ -1,4 +1,7 @@
 import pandas
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Read data file
 df = pandas.read_csv("medical_charges_with_descriptors.csv")
