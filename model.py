@@ -8,12 +8,15 @@ import seaborn as sns
 df = pandas.read_csv("medical_charges_with_descriptors.csv")
 
 # Examine file structure
+print("\n")
 df_structure = df.info()
 print(df_structure)
+print("\n")
 
 # Describe file contents
 df_describe = df.describe()
 print(df_describe)
+print("\n")
 
 # Chart settings
 sns.set_style("darkgrid")
