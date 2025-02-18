@@ -17,6 +17,6 @@ print(df_describe)
 
 # Chart settings
 sns.set_style("darkgrid")
-matplotlib.rdParams["font.size"] = 14
-matplotlib.rdParams["figure.figsize"] = (10, 6)
-matplotlib.rdParams["figure.facecolor"] = "#00000000"
+matplotlib.rcParams["font.size"] = 14
+matplotlib.rcParams["figure.figsize"] = (10, 6)
+matplotlib.rcParams["figure.facecolor"] = "#00000000"
