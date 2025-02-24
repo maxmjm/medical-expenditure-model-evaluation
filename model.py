@@ -23,3 +23,8 @@ sns.set_style("darkgrid")
 matplotlib.rcParams["font.size"] = 14
 matplotlib.rcParams["figure.figsize"] = (10, 6)
 matplotlib.rcParams["figure.facecolor"] = "#00000000"
+
+# Display age distribution of data as a histogram
+fig = px.histogram(df, x="age", marginal="box", nbins=47, title="Distribution of Age")
+fig.update_layout(bargap=0.1)
+fig.show()
