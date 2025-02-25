@@ -52,6 +52,13 @@ fig3 = px.histogram(df,
 fig3.update_layout(bargap=0.1)
 fig3.show()
 
-# Display number of smokers and non-smokers
+# Examine number of smokers and non-smokers
 num_smokers = df.smoker.value_counts()
 print(num_smokers)
+
+# Display sex distribution of smokers as a histogram
+fig4 = px.histogram(df, 
+                    x="smoker", 
+                    color="sex", 
+                    title="Smoker")
+fig4.show()
