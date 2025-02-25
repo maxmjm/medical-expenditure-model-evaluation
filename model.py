@@ -33,3 +33,8 @@ fig1.show()
 fig2 = px.histogram(df, x="bmi", marginal="box", color_discrete_sequence=["red"], title="Distribution of BMI")
 fig2.update_layout(bargap=0.1)
 fig2.show()
+
+# Display medical charges distribution of data as a histogram and box-plot
+fig3 = px.histogram(df, x="charges", marginal="box", color="smoker", color_discrete_sequence=["green", "grey"], title="Distribution of Annual Medical Charges")
+fig3.update_layout(bargap=0.1)
+fig3.show()
