@@ -51,3 +51,7 @@ fig3 = px.histogram(df,
                     title="Distribution of Annual Medical Charges")
 fig3.update_layout(bargap=0.1)
 fig3.show()
+
+# Display number of smokers and non-smokers
+num_smokers = df.smoker.value_counts()
+print(num_smokers)
