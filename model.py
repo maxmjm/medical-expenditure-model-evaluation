@@ -62,3 +62,14 @@ fig4 = px.histogram(df,
                     color="sex", 
                     title="Smoker")
 fig4.show()
+
+# Display relationship between age and medical charges using a scatter-plot
+fig5 = px.scatter(df,
+                  x="age",
+                  y="charges",
+                  color="smoker",
+                  opacity=0.8,
+                  hover_data=["sex"],
+                  title="Age vs Medical Charges")
+fig5.update_traces(marker_size=5)
+fig5.show()
