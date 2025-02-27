@@ -73,3 +73,12 @@ fig5 = px.scatter(df,
                   title="Age vs Medical Charges")
 fig5.update_traces(marker_size=5)
 fig5.show()
+
+# Display relationship between BMI and medical charges using a scatter-plot
+fig6 = px.scatter(df,
+                  x="bmi",
+                  y="charges",
+                  hover_data=["sex"],
+                  title="BMI vs Medical Charges")
+fig6.update_traces(marker_size=5)
+fig6.show()
