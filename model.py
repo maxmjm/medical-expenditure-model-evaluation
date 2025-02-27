@@ -78,6 +78,8 @@ fig5.show()
 fig6 = px.scatter(df,
                   x="bmi",
                   y="charges",
+                  color="smoker",
+                  opacity=0.8,
                   hover_data=["sex"],
                   title="BMI vs Medical Charges")
 fig6.update_traces(marker_size=5)
